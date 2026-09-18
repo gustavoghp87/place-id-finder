@@ -370,9 +370,9 @@ def create_result_file(
             f"{source_file}: the value of __Updated does not exist."
         )
     lines[updated_value_index] = updated_date
+    lines[-3] = r"content-length: 14"
     lines[-1] = r"sitecore\admin"
     place_id_field = [
-        "",
         "----field----",
         "field: {D62F908D-74BF-4987-9CAB-3B6982F1ADAA}",
         "name: Place ID",
