@@ -1,2 +1,4 @@
 .env
+.venv/
+Payment Locations/
 places_results.json
